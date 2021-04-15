@@ -16,7 +16,7 @@ spec:
               secretKey: webhook-secret-key
               secretName: gitops-webhook-secret
         - cel:
-            filter: (header.match('X-GitHub-Event', 'push') && body.repository.full_name == 'pixeljonas/taxi-gitops')
+            filter: (header.match('X-GitHub-Event', 'push') && body.repository.full_name == 'PixelJonas/taxi-gitops')
             overlays:
               - expression: body.ref.split('/')[2]
                 key: ref
@@ -32,7 +32,7 @@ spec:
               secretKey: webhook-secret-key
               secretName: webhook-secret-taxi-dev-taxi
         - cel:
-            filter: (header.match('X-GitHub-Event', 'push') && body.repository.full_name == 'pixeljonas/taxi')
+            filter: (header.match('X-GitHub-Event', 'push') && body.repository.full_name == 'PixelJonas/taxi')
             overlays:
               - expression: body.ref.split('/')[2]
                 key: ref
