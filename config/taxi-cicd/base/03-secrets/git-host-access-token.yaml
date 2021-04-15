@@ -1,0 +1,15 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: git-host-access-token
+  namespace: taxi-cicd
+spec:
+  encryptedData:
+    token: AgCH0/3BVFOyD2slltaKyutm+pORUKg/gTjexVVn5+RJhCjPY2j6JhFeqhQQ/g68cuFRfdg3gCe8MZRMc/rixiim8cjLLXEPN3kT0MYnYDEiIqzCHZoeIfCm4csCpoIcG46acB/RRlpyrnWOluuZjpkeuE6LSqxcbJCAY+87heRTyu1DvfwUoGg3JKzGfixY2OEeUhr9/aQBdxL7sz+Lkt3GcNnJB6/FKWVTgXli6M5Rvt9Cg+0782edizl8D8U7SNY1SszyDijWkbDl4LkPH1qXBfSwC+b0zB4unyP8iQo9+SlsQKKRCW0HrOc8dKvznweAImoHz72Ys390e1L24qCcRftDJNN6rIuEr361uae+SbyNj9VQvwAvcRVlPjufkmY3iccqvsSELoDSB1P2nvGIi855aKAq+BTZOpdzCfHKdc7D0h+6QznWILP/3S029a8ACOoxs0FEz92hRAULsY6xHAO+v9enKyLbqGLY8H1gyukOa/EmKpVCbajO2sI98ezzmFZ0fijEylozdurySHHV1OgpvL6Li3x6pTvKqZD8yREzWu5vqSnrJALTCLt36Pc+Ud7SOkVOuafZXf24ObVqv2fIWBpU9U8s/fbczVA2P9/WIVFAAZg+F+4p+BkM9Gv2o1p7qbA2CIKwsZ95To/5rifo4Lr9YSOl+/EznQBbrOmAQiMeqlpHEFvwIOsEf3euDzF+Yg4Se3Dyopr+4jho/u1eavViwo72Nn/Eglqc0dcpXi4fVmQr
+  template:
+    metadata:
+      creationTimestamp: null
+      name: git-host-access-token
+      namespace: taxi-cicd
+    type: Opaque

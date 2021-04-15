@@ -1,0 +1,3 @@
+resources:
+- taxi-dev-environment.yaml
+- taxi-dev-rolebinding.yaml

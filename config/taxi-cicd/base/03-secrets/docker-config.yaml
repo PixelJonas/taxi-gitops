@@ -1,0 +1,15 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: regcred
+  namespace: taxi-cicd
+spec:
+  encryptedData:
+    .dockerconfigjson: AgCIhWckRXqo+0/Z8uS1Lqsvg88Gk/5NjSu7435c5iUNJv6CpjnEgcwpFHaMoGCMSxEedMZinBeXnJI8g65MPBAp75mFJ70T4BhtYRCQW2EZp4rWLpDV8voqnn/y2W7K97XH/aF5mr1+k2+dB8RTN5cBtE6sBOGh9Nw8rJH6jiV1EL6Nt0LdlcudzWu5s1eCGDf4qMJcw3vNFGK4oMx0/0pu51FFb6IbSn8yHmSMTA4hvuLugILVfHGDsCIjskkKfqj1Ef341RFERancowsVagEr1tv7/3pbz+YnKZ/5Q2FtAk4Odtqow25jOahvcbENQWHkFLWVhxCxW4zNvX682mPmjnizFWBR02IdCSXPChVcfseykwLSe1GnmOCpdwNcgWv1MAZjRu/5BxsnKRZjslLrcie7qiQA3UDDvQ6i9V/6w8W+txiqOYresRKpv9MuXyBgKWUgkpE3nFaZzGYlGvcsFVfNfEseHdWgBncNyJeqp3xk8D5O02iAAvnAaB4dimUftwURF+3tf0fSEyRnl5ZmdFtiKmye0qdh08W4Zv30VPARSBScsRsOqNqXzGUL+y+btUCn+UTy2xtZSJA/t+rZDrU9t4gZrn9JSBTSX+xGwcZ9qBKTowlCl92vBA6ppH6D9DmAfCKab4ppfAQLHCcN0dMz2KGic2rVfWrFI/Us+h7DG86ZxoNhBBDor4PgUPZjOCfnybqr4s81Q8WmaFeitv0MQalOHea8qmSMQWp6T9IH7mrKud1/dliKAIXManASy0WS0uPgtyZaUxaw5dz6khEQC0D5Fo3YywyyFWO6aFNEeyNckIrpQVE31jbXtr0n68E1r0dMvSF+Gwfpck72/nf6PZP+fdgV4BfdLFxmizmxhHY3xcznIOuhco3uALxZUoXS9+UrOvmi6XXEHuzmYowJBPEcav6KvnoCmTNDkmRUhg==
+  template:
+    metadata:
+      creationTimestamp: null
+      name: regcred
+      namespace: taxi-cicd
+    type: kubernetes.io/dockerconfigjson
