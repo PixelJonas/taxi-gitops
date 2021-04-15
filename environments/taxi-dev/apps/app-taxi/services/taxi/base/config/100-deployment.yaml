@@ -22,11 +22,11 @@ spec:
         app.kubernetes.io/part-of: app-taxi
     spec:
       containers:
-      - image: nginxinc/nginx-unprivileged:latest
-        imagePullPolicy: Always
-        name: taxi
-        ports:
-        - containerPort: 8080
-        resources: {}
+        - image: quay.io/jjanz/taxi:latest
+          imagePullPolicy: Always
+          name: taxi
+          ports:
+            - containerPort: 8080
+          resources: {}
       serviceAccountName: default
 status: {}
