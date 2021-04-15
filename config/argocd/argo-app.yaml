@@ -33,7 +33,7 @@ spec:
     jsonPointers:
     - /status
     kind: SealedSecret
-  project: default
+  project: taxi-gitops
   source:
     path: config/argocd
     repoURL: https://github.com/pixeljonas/taxi-gitops.git

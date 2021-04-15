@@ -8,7 +8,7 @@ spec:
   destination:
     namespace: taxi-stage
     server: https://kubernetes.default.svc
-  project: default
+  project: taxi-gitops
   source:
     path: environments/taxi-stage/env/overlays
     repoURL: https://github.com/pixeljonas/taxi-gitops.git
