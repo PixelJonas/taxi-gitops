@@ -5,7 +5,7 @@ metadata:
   labels:
     app.kubernetes.io/name: app-taxi
   name: taxi-dev-app-taxi
-  namespace: openshift-gitops
+  namespace: argocd
 spec:
   destination:
     namespace: taxi-dev
